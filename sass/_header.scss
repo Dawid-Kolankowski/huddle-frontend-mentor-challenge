@@ -26,7 +26,10 @@
     background-color: transparent;
     color: $pink;
     border: 1px solid $pink;
-    padding: 0.5rem 2rem;
+    padding: 0.6rem 2rem;
     border-radius: 3rem;
+    @media screen and (min-width: 800px) {
+      font-size: 1.2rem;
+    }
   }
 }

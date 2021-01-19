@@ -50,6 +50,17 @@ h1 {
   }
 }
 
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 800px) {
+  h3 {
+    font-size: 2.25rem;
+  }
+}
+
 .header {
   margin: 2rem 1rem;
 }
@@ -81,8 +92,14 @@ h1 {
   background-color: transparent;
   color: #ff52bf;
   border: 1px solid #ff52bf;
-  padding: 0.5rem 2rem;
+  padding: 0.6rem 2rem;
   border-radius: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .header__button {
+    font-size: 1.2rem;
+  }
 }
 
 .hero {
@@ -120,6 +137,13 @@ h1 {
   margin-bottom: 4rem;
 }
 
+@media screen and (min-width: 800px) {
+  .hero__button {
+    font-size: 1.2rem;
+    padding: 1.5rem 5rem;
+  }
+}
+
 .hero__image {
   height: auto;
   width: 80%;
@@ -149,5 +173,142 @@ h1 {
 
 .hero__stats__heading {
   font-size: 4rem;
+}
+
+.info__build {
+  margin: 10rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info__build--spacing {
+  margin-top: 2rem;
+}
+
+.info-left {
+  padding: 2rem;
+  order: 2;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .info-left {
+    padding: 0rem;
+    order: 0;
+    margin-right: 3rem;
+  }
+}
+
+.info-right {
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .info-right {
+    padding: 0rem;
+    margin-left: 3rem;
+  }
+}
+
+.info__text {
+  max-width: 25rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .info__text {
+    font-size: 1.1rem;
+  }
+}
+
+.info__content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .info__content-wrapper {
+    flex-direction: row;
+  }
+}
+
+.info__content-wrapper img {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+  .info__content-wrapper img {
+    max-width: 50%;
+  }
+}
+
+.info__top {
+  display: block;
+  width: 100%;
+}
+
+.info__page {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.info__page--blue {
+  background-color: #f5faff;
+}
+
+.footer {
+  margin-top: -2px;
+  background-color: #00252e;
+  color: #f5faff;
+  width: 100%;
+}
+
+.footer__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+@media (min-width: 800px) {
+  .footer__content-wrapper {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.footer__contact > * {
+  margin-bottom: 1rem;
+  max-width: 19rem;
+}
+
+.footer__newsletter {
+  margin-top: 5rem;
+  max-width: 19rem;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__newsletter {
+    margin-top: 0px;
+  }
+}
+
+.footer__newsletter > * {
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

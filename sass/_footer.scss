@@ -1,0 +1,40 @@
+.footer {
+  margin-top: -2px;
+  background-color: $veryDarkCyan;
+  color: $veryPaleBlue;
+  width: 100%;
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 0;
+    @media (min-width: 800px) {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+
+  &__contact > * {
+    margin-bottom: 1rem;
+    max-width: 19rem;
+  }
+
+  &__newsletter {
+    margin-top: 5rem;
+    @media screen and (min-width: 800px) {
+      margin-top: 0px;
+    }
+    max-width: 19rem;
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
